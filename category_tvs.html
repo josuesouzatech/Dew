@@ -1,45 +1,118 @@
-<header>
-    <h1>Categoria de Produtos</h1>
-</header>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>TVs</title>
+</head>
+<body class="page-category_tvs">
+    <ul class="nav">
+        <li><a href="./index.html">Voltar</a></li>
+        <li><a href="./category_acessories.html">Acessórios</a></li>
+    </ul>
 
-<main>
-    <section>
-        <h2>TVs</h2>
+    <main>
+        <div class="page-header intro">
+            <h1>Categoria de Produtos</h1>
+            <h2 id="products-title">TVs</h2>
+        </div>
 
-        <ul>
-            <li>
-                <img
-                    src="https://t2.tudocdn.net/707140?w=1920"
-                    width="447"
-                    height="447"
-                    alt="Smart TV Samsung The Frame 43 polegadas"
-                >
+        <section>
+            <ul class="products-list">
+                <li class="product">
+                    <img src="https://t2.tudocdn.net/707140?w=1920" width="447" height="447"
+                         alt="Smart TV Samsung The Frame 43 polegadas">
+                    <h3>Samsung</h3>
+                    <p class="price">R$ 3.499,00</p>
+                    <p>21x de R$ 166,62 sem juros no Cartão Magalu</p>
+                    <div class="actions">
+                        <a class="details" href="https://www.magazineluiza.com.br/smart-tv-43-samsung-4k-the-frame-ls03f-tizen-qn43ls03fagxzd-2025/p/240576600/et/tves/" target="_blank" rel="noopener noreferrer">Ver detalhes</a>
+                        <button class="button-comprar" data-open="compra-samsung">Comprar</button>
+                    </div>
 
-                <h3>Samsung</h3>
-                <p>R$ 3.499,00</p>
-                <p>21x de R$ 166,62 sem juros no Cartão Magalu</p>
+                    <dialog id="compra-samsung">
+                        <form method="dialog">
+                            <fieldset>
+                                <legend>Informações da compra</legend>
+                                <div class="col">
+                                    <label>Marca: Samsung</label>
+                                    <label>Preço: R$ 3.499,00</label>
+                                </div>
+                                <div class="col">
+                                    <label for="nome-samsung">Nome:</label>
+                                    <input type="text" id="nome-samsung" placeholder="Seu nome" required>
+                                </div>
+                                <menu class="products-form-buttons">
+                                    <button type="button" class="secondary" data-close>Cancelar</button>
+                                    <button type="submit">Finalizar compra</button>
+                                </menu>
+                            </fieldset>
+                        </form>
+                    </dialog>
+                </li>
 
-                <a href="https://www.magazineluiza.com.br/smart-tv-43-samsung-4k-the-frame-ls03f-tizen-qn43ls03fagxzd-2025/p/240576600/et/tves/">
-                    Ver detalhes
-                </a>
-            </li>
+                <li class="product">
+                    <img src="https://www.lg.com/content/dam/channel/wcms/1-channel/portal/ms/lgcom/2026/tv-audio-video/tv/qned-evo/qned85/gp1/gallery/100-qned85/gallery/galeria-v2/1-galeria-100qned85bs-2010x1334.jpg/jcr:content/renditions/thum-1600x1062.jpeg?w=800"
+                         width="447" height="447" alt="Smart TV LG QNED 85">
+                    <h3>LG</h3>
+                    <p class="price">R$ 20.756,55</p>
+                    <p>Até 12x sem juros no cartão de crédito</p>
+                    <div class="actions">
+                        <a class="details" href="https://www.lg.com/br/tvs-e-soundbars/qned/100qned85bs/" target="_blank" rel="noopener noreferrer">Ver detalhes</a>
+                        <button class="button-comprar" data-open="compra-lg">Comprar</button>
+                    </div>
 
-            <li>
-                <img
-                    src="https://www.lg.com/content/dam/channel/wcms/1-channel/portal/ms/lgcom/2026/tv-audio-video/tv/qned-evo/qned85/gp1/gallery/100-qned85/gallery/galeria-v2/1-galeria-100qned85bs-2010x1334.jpg/jcr:content/renditions/thum-1600x1062.jpeg?w=800"
-                    width="447"
-                    height="447"
-                    alt="Smart TV LG QNED 85"
-                >
+                    <dialog id="compra-lg">
+                        <form method="dialog">
+                            <fieldset>
+                                <legend>Informações da compra</legend>
+                                <div class="col">
+                                    <label>Marca: LG</label>
+                                    <label>Preço: R$ 20.756,55</label>
+                                </div>
+                                <div class="col">
+                                    <label for="nome-lg">Nome:</label>
+                                    <input type="text" id="nome-lg" placeholder="Seu nome" required>
+                                </div>
+                                <menu class="products-form-buttons">
+                                    <button type="button" class="secondary" data-close>Cancelar</button>
+                                    <button type="submit">Finalizar compra</button>
+                                </menu>
+                            </fieldset>
+                        </form>
+                    </dialog>
+                </li>
+            </ul>
+        </section>
 
-                <h3>LG</h3>
-                <p>R$ 20.756,55</p>
-                <p>Até 12x sem juros no cartão de crédito</p>
+        <section class="faq">
+            <h2>Perguntas frequentes</h2>
+            <details>
+                <summary>Como solicitar um modelo?</summary>
+                <p>Se o modelo que você procura não está no site, entre em contato com a loja.</p>
+            </details>
+            <details>
+                <summary>Como o produto é enviado?</summary>
+                <p>Depois da compra, o produto é enviado pelos Correios.</p>
+            </details>
+        </section>
+    </main>
 
-                <a href="https://www.lg.com/br/tvs-e-soundbars/qned/100qned85bs/">
-                    Ver detalhes
-                </a>
-            </li>
-        </ul>
-    </section>
-</main>
+    <footer>© 2026 Todos os direitos reservados.</footer>
+
+    <script>
+        document.querySelectorAll("[data-open]").forEach((botao) => {
+            botao.addEventListener("click", () => {
+                document.getElementById(botao.dataset.open).showModal();
+            });
+        });
+
+        document.querySelectorAll("[data-close]").forEach((botao) => {
+            botao.addEventListener("click", () => {
+                botao.closest("dialog").close();
+            });
+        });
+    </script>
+</body>
+</html>
